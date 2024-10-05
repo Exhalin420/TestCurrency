@@ -1,0 +1,837 @@
+module MoneyVariety
+{
+  imports
+  {
+    Base
+  }
+
+  /****************************** Crafting ******************************/
+    recipe Make Gold Bar
+    {
+       GoldScraps=50,
+       keep [Recipe.GetItemTypes.Hammer],
+
+  	   Result:GoldBar,
+  	   Sound:Hammering,
+       Time:150.0,
+       Category:Survivalist,
+    }
+
+    recipe Make Silver Bar
+    {
+       SilverScraps=50,
+       keep [Recipe.GetItemTypes.Hammer],
+
+  	   Result:SilverBar,
+  	   Sound:Hammering,
+       Time:150.0,
+       Category:Survivalist,
+    }
+
+    recipe Break Apart Gold Bar
+    {
+       GoldBar,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result:GoldScraps = 50,
+       Sound:Hammering,
+       Time:150.0,
+       Category:Survivalist,
+    }
+
+    recipe Break Apart Silver Bar
+    {
+       SilverBar,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result:SilverScraps = 50,
+       Sound:Hammering,
+       Time:150.0,
+       Category:Survivalist,
+    }
+
+  /****************************** Harvesting ******************************/
+
+    recipe Harvest Gold
+    {
+        Necklace_Gold/Necklace_GoldRuby/NecklaceLong_Gold/NoseRing_Gold/NoseStud_Gold/Earring_LoopLrg_Gold/Earring_LoopMed_Gold/Earring_LoopSmall_Gold_Both/Earring_LoopSmall_Gold_Top/Earring_Stud_Gold/Ring_Right_MiddleFinger_Gold/Ring_Left_MiddleFinger_Gold/Ring_Right_RingFinger_Gold/Ring_Left_RingFinger_Gold/WristWatch_Right_ClassicGold/WristWatch_Left_ClassicGold/Bracelet_BangleRightGold/Bracelet_BangleLeftGold/Bracelet_ChainRightGold/Bracelet_ChainLeftGold/BellyButton_DangleGold/BellyButton_RingGold/BellyButton_StudGold/BellyButton_StudGoldDiamond,
+        keep [Recipe.GetItemTypes.Hammer],
+
+  	   Result:GoldScraps,
+  	   Sound:Hammering,
+       Time:100.0,
+       Category:Survivalist,
+       OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+       OnCreate:GoldCrafting_OnCreate,
+    }
+
+    recipe Harvest Gem
+    {
+        Necklace_Choker_Sapphire/Necklace_Choker_Diamond/Earring_Stone_Sapphire/Earring_Stone_Emerald/Earring_Stone_Ruby/Earring_Dangly_Sapphire/Earring_Dangly_Emerald/Earring_Dangly_Ruby/Earring_Dangly_Diamond,
+        keep [Recipe.GetItemTypes.Hammer],
+
+  	   Result:GemScrap,
+  	   Sound:Hammering,
+       Time:100.0,
+       Category:Survivalist,
+       OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+    }
+
+    recipe Harvest Gold & Gem
+    {
+        Necklace_GoldRuby/Necklace_GoldDiamond/NecklaceLong_GoldDiamond/Ring_Right_MiddleFinger_GoldRuby/Ring_Left_MiddleFinger_GoldRuby/Ring_Right_RingFinger_GoldRuby/Ring_Left_RingFinger_GoldRuby/Ring_Right_MiddleFinger_GoldDiamond/Ring_Left_MiddleFinger_GoldDiamond/Ring_Right_RingFinger_GoldDiamond/Ring_Left_RingFinger_GoldDiamond/BellyButton_DangleGoldRuby/BellyButton_RingGoldDiamond/BellyButton_RingGoldRuby,
+        keep [Recipe.GetItemTypes.Hammer],
+
+       Result:GoldScraps,
+       Sound:Hammering,
+       Time:100.0,
+       Category:Survivalist,
+       OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+       OnCreate:GoldGemCrafting_OnCreate,
+    }
+    recipe Harvest Silver
+    {
+       Locket/Necklace_Silver/Necklace_SilverCrucifix/NoseRing_Silver/NoseStud_Silver/Earring_LoopLrg_Silver/Earring_LoopMed_Silver/Earring_LoopSmall_Silver_Both/Earring_LoopSmall_Silver_Top/Earring_Stud_Silver/Ring_Right_MiddleFinger_Silver/Ring_Left_MiddleFinger_Silver/Ring_Right_RingFinger_Silver/Ring_Left_RingFinger_Silver/Bracelet_BangleRightSilver/Bracelet_BangleLeftSilver/Bracelet_ChainRightSilver/Bracelet_ChainLeftSilver/NecklaceLong_Silver/BellyButton_DangleSilver/BellyButton_RingSilver/BellyButton_StudSilver,
+       keep [Recipe.GetItemTypes.Hammer],
+
+  	   Result:SilverScraps,
+  	   Sound:Hammering,
+       Time:100.0,
+       Category:Survivalist,
+       OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+       OnCreate:SilverCrafting_OnCreate,
+    }
+
+    recipe Harvest Silver & Gem
+    {
+       Necklace_SilverSapphire/Necklace_SilverDiamond/NecklaceLong_SilverEmerald/NecklaceLong_SilverSapphire/NecklaceLong_SilverDiamond/Ring_Right_MiddleFinger_SilverDiamond/Ring_Left_MiddleFinger_SilverDiamond/Ring_Right_RingFinger_SilverDiamond/Ring_Left_RingFinger_SilverDiamond/BellyButton_DangleSilverDiamond/BellyButton_RingSilverDiamond/BellyButton_RingSilverRuby/BellyButton_StudSilverDiamond,
+       keep [Recipe.GetItemTypes.Hammer],
+
+  	   Result:SilverScraps,
+  	   Sound:Hammering,
+       Time:100.0,
+       Category:Survivalist,
+       OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+       OnCreate:SilverGemCrafting_OnCreate,
+    }
+
+    recipe Harvest Pearls
+    {
+       Necklace_Pearl/Earring_Pearl/Earring_Dangly_Pearl,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result:Pearls=2,
+       Sound:Hammering,
+       Time:100.0,
+       Category:Survivalist,
+       OnCreate:PearlCrafting_OnCreate,
+    }
+
+  /****************************** Gem Purchase Options ******************************/
+	recipe Trade 1 Gold Bar for 10 Dollars
+    {
+         GoldBar=1,
+         keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+         Result:Base.Money=10,
+         Time:10.0,
+         Category:Trading,
+    }
+
+    recipe Trade 10 Dollars for PropaneTank
+    {
+         Base.Money=10,
+         keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+         Result:PropaneTank,
+         Time:10.0,
+         Category:Trading,
+    }
+
+    recipe Trade 1 Gem for 1 Dollar
+    {
+         GemScrap=1,
+         keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+    	 Result:Base.Money,
+         Time:10.0,
+         Category:Trading,
+    }
+
+    recipe Trade 1 Silver Bar for 5 Dollars
+    {
+         SilverBar=1,
+         keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+    	 Result:Base.Money=5,
+         Time:10.0,
+         Category:Trading,
+    }
+
+    recipe Trade 1 Pearl for 1 Dollar
+    {
+         Pearls=1,
+         keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+         Result:Base.Money,
+         Time:10.0,
+         Category:Trading,
+    }
+
+    recipe Trade 2 Dollars for Strawberry Seeds
+    {
+       Base.Money=2,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+  	   Result:StrewberrieBagSeed,
+       Time:10.0,
+       Category:Trading,
+    }
+
+    recipe Trade 2 Dollars for Tomato Seeds
+    {
+       Base.Money=2,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+  	   Result:TomatoBagSeed,
+       Time:10.0,
+       Category:Trading,
+    }
+
+    recipe Trade 2 Dollars for Potato Seeds
+    {
+       Base.Money=2,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+  	   Result:PotatoBagSeed,
+       Time:10.0,
+       Category:Trading,
+    }
+
+    recipe Trade 2 Dollars for Broccoli Seeds
+    {
+       Base.Money=2,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+  	   Result:BroccoliBagSeed,
+       Time:10.0,
+       Category:Trading,
+    }
+
+    recipe Trade 2 Dollars for Cabbage Seeds
+    {
+       Base.Money=2,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+  	   Result:CabbageBagSeed,
+       Time:10.0,
+       Category:Trading,
+    }
+
+    recipe Trade 2 Dollars for Carrot Seeds
+    {
+       Base.Money=2,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+  	   Result:CarrotBagSeed,
+       Time:10.0,
+       Category:Trading,
+    }
+
+    recipe Trade 5 Dollars for Milk
+    {
+         Base.Money=5,
+         keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+         Result:Milk,
+         Time:10.0,
+         Category:Trading,
+    }
+
+    recipe Trade 5 Dollars for Amplifier
+    {
+         Base.Money=5,
+         keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+         Result:Amplifier,
+         Time:10.0,
+         Category:Trading,
+    }
+
+    recipe Trade 3 Dollars for Battery
+    {
+         Base.Money=3,
+         keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+         Result:Battery,
+         Time:10.0,
+         Category:Trading,
+    }
+
+    recipe Trade 5 Dollars for Electrical Wiring
+    {
+         Base.Money=5,
+         keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+         Result:ElectricWire,
+         Time:10.0,
+         Category:Trading,
+    }
+
+    recipe Trade 5 Dollars for Electronics Scrap
+    {
+         Base.Money=5,
+         keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+         Result:ElectronicsScrap,
+         Time:10.0,
+         Category:Trading,
+    }
+
+    recipe Trade 5 Dollars for Motion Sensor
+    {
+         Base.Money=5,
+         keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+         Result:MotionSensor,
+         Time:10.0,
+         Category:Trading,
+    }
+
+    recipe Trade 2 Dollars for Light Bulb
+    {
+         Base.Money=2,
+         keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+         Result:LightBulb,
+         Time:10.0,
+         Category:Trading,
+    }
+
+    recipe Trade 5 Dollars for Box of Screws
+    {
+       Base.Money=5,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result:ScrewsBox,
+       Time:10.0,
+       Category:Trading,
+    }
+
+    recipe Trade 2 Dollars for Box of Paperclips
+    {
+       Base.Money=2,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result:PaperclipBox,
+       Time:10.0,
+       Category:Trading,
+    }
+
+    recipe Trade 10 Dollars for Box of Nails
+    {
+       Base.Money=10,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result:NailsBox,
+       Time:10.0,
+       Category:Trading,
+    }
+
+    recipe Trade 5 Dollars for Box of Jars
+    {
+       Base.Money=5,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result:BoxOfJars,
+       Time:10.0,
+       Category:Trading,
+    }
+
+    recipe Trade 15 Dollars for Welding Rods
+    {
+       Base.Money=15,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result:WeldingRods,
+       Time:10.0,
+       Category:Trading,
+    }
+
+    recipe Trade 2 Dollars for Padlock
+    {
+       Base.Money=2,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result:Padlock,
+       Time:10.0,
+       Category:Trading,
+    }
+
+    recipe Trade 25 Dollars for Box of Shotgun Shells
+    {
+       Base.Money=25,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result:ShotgunShellsBox,
+       Time:10.0,
+       Category:Trading,
+    }
+
+    recipe Trade 25 Dollars for Box of .223 Bullets
+    {
+       Base.Money=25,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result:223Box,
+       Time:10.0,
+       Category:Trading,
+    }
+
+    recipe Trade 25 Dollars for Box of .308 Bullets
+    {
+       Base.Money=25,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result:308Box,
+       Time:10.0,
+       Category:Trading,
+    }
+
+    recipe Trade 25 Dollars for Box of .38 Bullets
+    {
+       Base.Money=25,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result:Bullets38Box,
+       Time:10.0,
+       Category:Trading,
+    }
+
+    recipe Trade 25 Dollars for Box of .44 Bullets
+    {
+       Base.Money=25,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result:Bullets44Box,
+       Time:10.0,
+       Category:Trading,
+    }
+
+    recipe Trade 25 Dollars for Box of .45 Bullets
+    {
+       Base.Money=25,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result:Bullets45Box,
+       Time:10.0,
+       Category:Trading,
+    }
+
+    recipe Trade 25 Dollars for Box of 9mm Bullets
+    {
+       Base.Money=25,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result:Bullets9mmBox,
+       Time:10.0,
+       Category:Trading,
+    }
+
+    recipe Trade 25 Dollars for Box of .556 Bullets
+    {
+       Base.Money=25,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result:556Box,
+       Time:10.0,
+       Category:Trading,
+    }
+
+    recipe Trade 45 Dollars for Large Backpack
+    {
+       Base.Money=45,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result:Bag_ALICEpack,
+       Time:10.0,
+       Category:Trading,
+    }
+
+    recipe Trade 50 Dollars for Military Backpack
+    {
+       Base.Money=50,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result:Bag_ALICEpack_Army,
+       Time:10.0,
+       Category:Trading,
+    }
+
+  /****************************** Silver Purchase Options ******************************/
+    recipe Trade 2 Dollars for a Hand Axe
+    {
+       Base.Money=2,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+  	   Result:HandAxe,
+       Time:10.0,
+       Category:Trading,
+    }
+
+    recipe Trade 2 Dollars for a Mouse Trap
+    {
+       Base.Money=2,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result:TrapMouse,
+       Time:10.0,
+       Category:Trading,
+    }
+
+    recipe Trade 2 Dollars for Antibiotics
+    {
+       Base.Money=2,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+  	   Result:Antibiotics,
+       Time:10.0,
+       Category:Trading,
+    }
+
+    recipe Trade 2 Dollars for Hammer
+    {
+       Base.Money=2,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result:Hammer,
+       Time:10.0,
+       Category:Trading,
+    }
+
+    recipe Trade 2 Dollars for a Saw
+    {
+       Base.Money=2,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result:Saw,
+       Time:10.0,
+       Category:Trading,
+    }
+
+    recipe Trade 2 Dollars for an Axe
+    {
+       Base.Money=2,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+  	   Result:Axe,
+       Time:10.0,
+       Category:Trading,
+    }
+
+    recipe Trade 2 Dollars for an Fishing Rod
+    {
+       Base.Money=2,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result:FishingRod,
+       Time:10.0,
+       Category:Trading,
+    }
+
+    recipe Trade 2 Dollars for an Fishing Net Trap
+    {
+       Base.Money=2,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result:FishingNet,
+       Time:10.0,
+       Category:Trading,
+    }
+
+    recipe Trade 3 Dollars for an Wood Axe
+    {
+       Base.Money=3,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+  	   Result:WoodAxe,
+       Time:10.0,
+       Category:Trading,
+    }
+
+    recipe Trade 5 Dollars for an Sledgehammer
+    {
+       Base.Money=5,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+  	   Result:Sledgehammer,
+       Time:10.0,
+       Category:Trading,
+    }
+
+  /****************************** Gold  Purchase Options ******************************/
+    recipe Trade 10 Dollars for a Gas Can
+    {
+       Base.Money=10,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result:PetrolCan,
+       Time:10.0,
+       Category:Trading,
+    }
+
+    recipe Trade 20 Dollars for a Car Battery Charger
+    {
+       Base.Money=20,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result:CarBatteryCharger,
+       Time:10.0,
+       Category:Trading,
+    }
+    
+	recipe Trade 30 Dollars for a Machete
+    {
+       Base.Money=30,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result:Machete,
+       Time:10.0,
+       Category:Trading,
+    }
+
+    recipe Trade 10 Dollars for a Katana
+    {
+       Base.Money=10,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result:Katana,
+       Time:10.0,
+       Category:Trading,
+    }
+
+    recipe Trade 50 Dollars for Generator
+    {
+       Base.Money=50,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result:Generator,
+       Time:10.0,
+       Category:Trading,
+    }
+
+    recipe Trade 25 Dollars for M14
+    {
+       Base.Money=25,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result:AssaultRifle2,
+       Time:10.0,
+       Category:Trading,
+       OnCreate:m14Purchase_OnCreate,
+    }
+
+    recipe Trade 70 Dollars for M16
+    {
+       Base.Money=70,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+
+       Result:AssaultRifle,
+       Time:10.0,
+       Category:Trading,
+       OnCreate:m16Purchase_OnCreate,
+    }
+	recipe Trade 10 Dollars for a Crowbar
+    {
+        Base.Money=10,
+        Result: Crowbar,
+        Time: 10.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+	
+	recipe Trade 1 Dollars for a Thread
+    {
+        Base.Money=1,
+        Result: Thread,
+        Time: 10.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+	recipe Trade 1 Dollars for a Needle
+    {
+        Base.Money=1,
+        Result: Needle,
+        Time: 10.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+	recipe Trade 2 Dollars for a Baseball Bat
+    {
+        Base.Money=1,
+        Result: BaseballBat,
+        Time: 10.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+	recipe Trade 2 Dollars for a Metal Sheet
+    {
+        Base.Money=1,
+        Result: SheetMetal,
+        Time: 10.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+	recipe Trade 10 Dollars for a Metal Sheet x5
+    {
+        Base.Money=10,
+        Result: SheetMetal=5,
+        Time: 10.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+	recipe Trade 1 Dollar for a Small Metal Sheet
+    {
+        Base.Money=1,
+        Result: SmallSheetMetal,
+        Time: 10.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+	recipe Trade 5 Dollars for a Small Metal Sheets x5
+    {
+        Base.Money=5,
+        Result: SmallSheetMetal=5,
+        Time: 10.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+	recipe Trade 1 Dollar for Glue
+    {
+        Base.Money=1,
+        Result: Glue,
+        Time: 10.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+	recipe Trade 1 Dollar for Duct Tape
+    {
+        Base.Money=1,
+        Result: DuctTape,
+        Time: 10.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+	recipe Trade 1 Dollar for a Bottle of Bourbon
+    {
+        Base.Money=1,
+        Result: WhiskeyFull,
+        Time: 10.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+	recipe Trade 10 Dollars for a Standard Car Battery
+    {
+        Base.Money=10,
+        Result: CarBattery1,
+        Time: 10.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+	recipe Trade 10 Dollars for a Heavy-Duty Car Battery
+    {
+        Base.Money=10,
+        Result: CarBattery2,
+        Time: 10.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+	recipe Trade 10 Dollars for a Sport Car Battery
+    {
+        Base.Money=10,
+        Result: CarBattery3,
+        Time: 10.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+	recipe Trade 1 Dollars for a Metal Pipe
+    {
+        Base.Money=1,
+        Result: MetalPipe,
+        Time: 10.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+	recipe Trade 1 Dollar for Scrap Metal
+    {
+        Base.Money=1,
+        Result: ScrapMetal,
+        Time: 10.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+	recipe Trade 2 Dollars for a Bottle of Water
+    {
+        Base.Money=2,
+        Result: WaterBottleFull,
+        Time: 10.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+	recipe Trade 2 Dollars for a Metal Bar
+    {
+        Base.Money=2,
+        Result: MetalBar,
+        Time: 10.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+	recipe Trade 10 Dollars for a Metal Bar x5
+    {
+        Base.Money=10,
+        Result: MetalBar=5,
+        Time: 10.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+	recipe Trade 5 Dollars for Scrap Metal x5
+    {
+        Base.Money=5,
+        Result: ScrapMetal=5,
+        Time: 10.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+	}
+	recipe Trade 10 Dollar for a Metal Pipe x5
+    {
+        Base.Money=10,
+        Result: MetalPipe, 5
+        Time: 10.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+	recipe Trade 1 Dollar for Aluminum
+    {
+        Base.Money=1,
+        Result: Aluminum,
+        Time: 10.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+	recipe Trade 1 Dollar for a Propane Torch
+    {
+        Base.Money=1,
+        Result: BlowTorch,
+        Time: 10.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+	recipe Trade 1 Dollar for a Welding Mask
+    {
+        Base.Money=1,
+        Result: WeldingMask,
+        Time: 10.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+}

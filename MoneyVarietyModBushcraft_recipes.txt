@@ -1,0 +1,81 @@
+module MoneyVarietyBushcraft
+{
+  imports
+  {
+    Base
+  }
+
+/****************************** Gun Purchase Options ******************************/
+    recipe Trade 5 Dollars for a Kukri Machete
+    {
+       Base.Money=5,
+       Result: KukriMachete,
+       Time: 10.0,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+       Category: Trading,
+    }
+
+    recipe Trade 5 Dollars for a Rancher Machete
+    {
+       Base.Money=5,
+       Result: RancherMachete,
+       Time: 10.0,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+       Category: Trading,
+    }
+
+    recipe Trade 3 Dollars for a Reinforced Baseball Bat
+    {
+       Base.Money=3,
+       Result: ReinforcedBaseballBat,
+       Time: 10.0,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+       Category: Trading,
+    }
+
+    recipe Trade 5 Dollars for a Viking Axe
+    {
+       Base.Money=5,
+       Result: VikingAxe,
+       Time: 10.0,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+       Category: Trading,
+    }
+
+/****************************** Tool Purchase Options ******************************/
+    recipe Trade 2 Dollars for a Hand Hatchet
+    {
+        Base.Money=2,
+        Result: HandHatchet,
+        Time: 10.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 2 Dollars for a Cheap Survival Knife
+    {
+        Base.Money=2,
+        Result: CheapSurvivalKnife,
+        Time: 10.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 2 Dollars for a Survival Knife
+    {
+        Base.Money=2,
+        Result: SurvivalKnife,
+        Time: 10.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 4 Dollars for a Splitting Axe
+    {
+        Base.Money=4,
+        Result: SplittingAxe,
+        Time: 10.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+}

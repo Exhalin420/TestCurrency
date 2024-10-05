@@ -1,0 +1,1324 @@
+module MoneyVarietyBrita
+{
+  imports
+  {
+    Base
+  }
+
+/****************************** Repair Purchase Options ******************************/
+    recipe Trade 5 Dollars for a Gun Cleaning Kit
+    {
+       Base.Money=5,
+       Result: Cleaning,
+       Time: 5.0,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+       Category: Trading,
+    }
+
+    recipe Trade 2 Dollars for a Can of WD40
+    {
+       Base.Money=2,
+       Result: WD,
+       Time: 5.0,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+       Category: Trading,
+    }
+
+/****************************** Gun Purchase Options ******************************/
+    recipe Trade 10 Dollars for a Glock 17
+    {
+       Base.Money=10,
+       Result: G17,
+       Time: 5.0,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+       Category: Trading,
+    }
+
+    recipe Trade 10 Dollars for a Glock 21
+    {
+       Base.Money=10,
+       Result: G21,
+       Time: 5.0,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+       Category: Trading,
+    }
+
+    recipe Trade 10 Dollars for a S&W MP9
+    {
+       Base.Money=10,
+       Result: MP9,
+       Time: 5.0,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+       Category: Trading,
+    }
+
+    recipe Trade 10 Dollars for a S&W MP45
+    {
+       Base.Money=10,
+       Result: MP45,
+       Time: 5.0,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+       Category: Trading,
+    }
+
+    recipe Trade 10 Dollars for a Sig P226
+    {
+       Base.Money=10,
+       Result: P226,
+       Time: 5.0,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+       Category: Trading,
+    }
+
+    recipe Trade 10 Dollars for a Sig P220
+    {
+       Base.Money=10,
+       Result: P220,
+       Time: 5.0,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+       Category: Trading,
+    }
+
+    recipe Trade 10 Dollars for a Springfield XD9
+    {
+       Base.Money=10,
+       Result: XD9,
+       Time: 5.0,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+       Category: Trading,
+    }
+
+    recipe Trade 10 Dollars for a Colt Service .38
+    {
+        Base.Money=10,
+        Result: Colt_Service38,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 10 Dollars for a Ruger GP50 4inch
+    {
+        Base.Money=10,
+        Result: GP50_4,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 10 Dollars for a H&K HK4 .22lr
+    {
+       Base.Money=10,
+       Result: HK4_22,
+       Time: 5.0,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+       Category: Trading,
+    }
+
+    recipe Trade 10 Dollars for a Coachgun
+    {
+       Base.Money=10,
+       Result: Coachgun,
+       Time: 5.0,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+       Category: Trading,
+    }
+
+    recipe Trade 10 Dollars for a Ruger 522
+    {
+        Base.Money=10,
+        Result: Ruger_522,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 10 Dollars for a Cricket 22
+    {
+        Base.Money=10,
+        Result: Cricket_22,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 20 Dollars for a MP133
+    {
+       Base.Money=20,
+       Result: MP133,
+       Time: 5.0,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+       Category: Trading,
+    }
+
+    recipe Trade 20 Dollars for a Winchester M1897
+    {
+       Base.Money=20,
+       Result: M1897,
+       Time: 5.0,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+       Category: Trading,
+    }
+
+    recipe Trade 20 Dollars for a IWI Uzi
+    {
+        Base.Money=20,
+        Result: UZI,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 20 Dollars for a CZ Vz61 Scorpion
+    {
+        Base.Money=20,
+        Result: Vz61_Stock,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 20 Dollars for a Ingram Mac-5
+    {
+        Base.Money=20,
+        Result: MAC5_Stock,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 30 Dollars for a Remington 870
+    {
+        Base.Money=30,
+        Result: M870,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 30 Dollars for a SKS
+    {
+        Base.Money=3,
+        Result: SKS,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 80 Dollars for a AK-74
+    {
+        Base.Money=80,
+        Result: AK74,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 75 Dollars for a AKS-74
+    {
+        Base.Money=75,
+        Result: AKS74,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 75 Dollars for a AKS-74U Krinkov
+    {
+        Base.Money=75,
+        Result: AKS74U,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 50 Dollars for a H&K MP5
+    {
+        Base.Money=50,
+        Result: MP5_Fixed,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 40 Dollars for a Mini-14
+    {
+        Base.Money=40,
+        Result: MINI14,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 70 Dollars for a AKM
+    {
+        Base.Money=70,
+        Result: AKM,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 65 Dollars for a AKMS
+    {
+        Base.Money=65,
+        Result: AKMS_Stock,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 50 Dollars for a Colt M16A1
+    {
+        Base.Money=50,
+        Result: M16A1,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 50 Dollars for a Colt M16A2
+    {
+        Base.Money=50,
+        Result: M16A2,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 50 Dollars for a Colt M4A1
+    {
+        Base.Money=50,
+        Result: M4A1,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 50 Dollars for a H&K G3
+    {
+        Base.Money=50,
+        Result: G3,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 50 Dollars for a FN FAL
+    {
+        Base.Money=50,
+        Result: FAL,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 80 Dollars for a Benelli M514
+    {
+       Base.Money=80,
+       Result: M514,
+       Time: 5.0,
+       keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+       Category: Trading,
+    }
+
+/****************************** Ammo Purchase Options ******************************/
+    recipe Trade 2 Dollars for a Box of .22lr
+    {
+        Base.Money=2,
+        Result: Bullets22Box,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 5 Dollars for a Box of 5.7x28mm
+    {
+        Base.Money=5,
+        Result: Bullets57Box,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 2 Dollars for a Box of .380 ACP
+    {
+        Base.Money=2,
+        Result: Bullets380Box,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 5 Dollars for a Box of .357 Mag
+    {
+        Base.Money=5,
+        Result: Bullets357Box,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 2 Dollars for a Box of .38 spl
+    {
+        Base.Money=2,
+        Result: Bullets38Box,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 4 Dollars for a Box of 9x19 Luger
+    {
+        Base.Money=4,
+        Result: Bullets9mmBox,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 3 Dollars for a Box of .45 ACP
+    {
+        Base.Money=3,
+        Result: Bullets45Box,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 2 Dollars for a Box of .45 Long Colt
+    {
+        Base.Money=3,
+        Result: Bullets45LCBox,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 2 Dollars for a Box of .44 Mag
+    {
+        Base.Money=2,
+        Result: Bullets44Box,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 5 Dollars for a Box of .45-70 Gov
+    {
+        Base.Money=5,
+        Result: Bullets4570Box,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 2 Dollars for a Box of .50 Mag
+    {
+        Base.Money=2,
+        Result: Bullets50MAGBox,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 5 Dollars for a Box of .45 Shotgun Shells
+    {
+        Base.Money=5,
+        Result: 45gShotgunShellsBox,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 5 Dollars for a Box of 20g Shotgun Shells
+    {
+        Base.Money=5,
+        Result: 20gShotgunShellsBox,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 5 Dollars for a Box of 12g Shotgun Shells
+    {
+        Base.Money=5,
+        Result: ShotgunShellsBox,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 5 Dollars for a Box of 5g Shotgun Shells
+    {
+        Base.Money=5,
+        Result: 5gShotgunShellsBox,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 10 Dollars for a Box of 5.56x45mm NATO
+    {
+        Base.Money=10,
+        Result: 556Box,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 10 Dollars for a Box of 5.45x39mm
+    {
+        Base.Money=10,
+        Result: 545x39Box,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 10 Dollars for a Box of 7.62x39mm
+    {
+        Base.Money=10,
+        Result: 762x39Box,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 5 Dollars for a Box of 7.62x51 NATO
+    {
+        Base.Money=5,
+        Result: 762x51Box,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 5 Dollars for a Box of 7.62x54r
+    {
+        Base.Money=5,
+        Result: 762x54rBox,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 5 Dollars for a Box of 30-06
+    {
+        Base.Money=5,
+        Result: 3006Box,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 2 Dollars for a Box of .50BMG
+    {
+        Base.Money=2,
+        Result: 50BMGBox,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 7 Dollars for a Box of .223 Rem
+    {
+        Base.Money=7,
+        Result: 223Box,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 7 Dollars for a Box of .308 Winchester
+    {
+        Base.Money=7,
+        Result: 308Box,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+/****************************** Magazine Purchase Options ******************************/
+    recipe Trade 2 Dollars for a .38 Speedloader
+    {
+        Base.Money=2,
+        Result: 38Speed,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 2 Dollars for a .44 Speedloader
+    {
+        Base.Money=2,
+        Result: 44Speed,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 2 Dollars for a .22lr 5-rnd Magazine
+    {
+        Base.Money=2,
+        Result: 22Clip,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 2 Dollars for a .22lr 25-rnd Mag
+    {
+        Base.Money=2,
+        Result: 22ExtClip,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 2 Dollars for a .380 7-rnd Magazine
+    {
+        Base.Money=2,
+        Result: 380Clip,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 2 Dollars for a 9mm 15-rnd Magazine
+    {
+        Base.Money=2,
+        Result: 9mmClip,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 2 Dollars for a 9mm 30-rnd Mag
+    {
+        Base.Money=2,
+        Result: 9mmExtClip,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 2 Dollars for a .45ACP Dbl Stack 13-rnd Mag
+    {
+        Base.Money=2,
+        Result: 45DSClip,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 4 Dollars for a .45ACP Dbl Stack 24-rnd Mag
+    {
+        Base.Money=4,
+        Result: 45DSExtClip,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 2 Dollars for a .45ACP 7-rnd Magazine
+    {
+        Base.Money=2,
+        Result: 45Clip,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 3 Dollars for a .45ACP 15-rnd Mag
+    {
+        Base.Money=3,
+        Result: 45ExtClip,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 2 Dollars for a .44 8-rnd Magazine
+    {
+        Base.Money=2,
+        Result: 44Clip,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 2 Dollars for a .223 5-rnd Magazine
+    {
+        Base.Money=2,
+        Result: 223StdClip,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 3 Dollars for a .223 20-rnd Magazine
+    {
+        Base.Money=3,
+        Result: 223ExtClip,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 2 Dollars for a .223 Hunting Magazine
+    {
+        Base.Money=2,
+        Result: 223Clip,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 2 Dollars for a .308 5-rnd Magazine
+    {
+        Base.Money=2,
+        Result: 308StdClip,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 3 Dollars for a .308 20-rnd Magazine
+    {
+        Base.Money=3,
+        Result: 308ExtClip,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 2 Dollars for a .308 Hunting Magazine
+    {
+        Base.Money=2,
+        Result: 308Clip,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 4 Dollars for a 5.45x39mm 30-rnd Mag
+    {
+        Base.Money=4,
+        Result: 545StdClip,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 4 Dollars for a 5.56x45mm 30-rd Magazine
+    {
+        Base.Money=4,
+        Result: 556Clip,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 4 Dollars for a 7.62x39mm 30-rnd Magazine
+    {
+        Base.Money=4,
+        Result: AKClip,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 3 Dollars for a SVD 5-rnd MAgazine
+    {
+        Base.Money=3,
+        Result: SVDClip,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 2 Dollars for a .50BMG Magazine
+    {
+        Base.Money=2,
+        Result: M82Clip,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 2 Dollars for a M1 Garand Enbloc Clip
+    {
+        Base.Money=2,
+        Result: M1Clip,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 2 Dollars for a SKS 5-rnd Stripper Clip
+    {
+        Base.Money=2,
+        Result: SKSClip,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 2 Dollars for a 1903 5-rnd Stripper Clip
+    {
+        Base.Money=2,
+        Result: 1903Clip,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 2 Dollars for a Mosin Nagant 5-rnd Stripper Clip
+    {
+        Base.Money=2,
+        Result: MosinClip,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 2 Dollars for a .308 5-rnd Stripper Clip
+    {
+        Base.Money=2,
+        Result: 308StrClip,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 3 Dollars for a ASVAL 20-rnd Magazine
+    {
+        Base.Money=3,
+        Result: ASVALClip,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 2 Dollars for a VSS 5-rnd Magazine
+    {
+        Base.Money=2,
+        Result: VSSClip,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 3 Dollars for a FN 5.7 20-rnd Magazine
+    {
+        Base.Money=3,
+        Result: 57Clip,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 4 Dollars for a FN P90 50-rnd Magazine
+    {
+        Base.Money=4,
+        Result: P90Clip,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 4 Dollars for a SPAS-15 7rnd Magazine
+    {
+        Base.Money=4,
+        Result: SPASClip,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 5 Dollars for a 12 Gauge 20-rnd Drum Magazine
+    {
+        Base.Money=5,
+        Result: 12gDrum,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 4 Dollars for a .380 ACP 30-rnd Magazine
+    {
+        Base.Money=4,
+        Result: 380ExtClip,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+/****************************** Apparel Purchase Options ******************************/
+
+    
+    recipe Trade 2 Dollars for a Sordin Headset
+    {
+        Base.Money=2,
+        Result: Hat_Sordin,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 2 Dollars for a Astrocom Headset
+    {
+        Base.Money=2,
+        Result: Hat_Astrocom,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 4 Dollars for a D3M Chest Rig
+    {
+        Base.Money=4,
+        Result: Bag_D3M,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 4 Dollars for a Blackhawk Commando Chest Rig
+    {
+        Base.Money=4,
+        Result: Bag_Blackhawk,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 4 Dollars for a Fairwin Tactical Belt
+    {
+        Base.Money=4,
+        Result: Bag_Tactical_Belt_Front,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+	
+    recipe Trade 20 Dollars for a M1 Helmet Mitchell
+    {
+        Base.Money=20,
+        Result: Hat_M1_Helmet,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 20 Dollars for a M1 Helmet
+    {
+        Base.Money=20,
+        Result: Hat_M1_Helmet_Ori,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 40 Dollars for a Ops-Core FAST Helmet
+    {
+        Base.Money=40,
+        Result: Hat_FAST_Opscore,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 50 Dollars for a ARVN Rucksack
+    {
+        Base.Money=50,
+        Result: Bag_ARVN_Rucksack,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 50 Dollars for a Y-Zip Assault Bag
+    {
+        Base.Money=50,
+        Result: Bag_ZIP,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 50 Dollars for a SPOSN SSO Bober-M Assault Bag
+    {
+        Base.Money=50,
+        Result: Bag_SSO,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 50 Dollars for a Savotta Jaakari S Backpack
+    {
+        Base.Money=50,
+        Result: Bag_Savotta,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 50 Dollars for a Bushcraft Backpack
+    {
+        Base.Money=50,
+        Result: Bag_Bush,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 50 Dollars for a Bushcraft Backpack with Axe
+    {
+        Base.Money=50,
+        Result: Bag_Hunting,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+/****************************** Addon Purchase Options ******************************/
+
+    recipe Trade 2 Dollars for a Rifle Butt Pad
+    {
+        Base.Money=2,
+        Result: Pad,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 2 Dollars for a Bipod
+    {
+        Base.Money=2,
+        Result: Bipod,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 2 Dollars for a Ammo Sling
+    {
+        Base.Money=2,
+        Result: Ammobelt,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 2 Dollars for a Single Point Sling
+    {
+        Base.Money=2,
+        Result: Sling_1,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 2 Dollars for a Angled Foregrip
+    {
+        Base.Money=2,
+        Result: ForeGrip,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 2 Dollars for a Magpul MOE Vert Grip
+    {
+        Base.Money=2,
+        Result: Grip_Magpul,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 2 Dollars for a Dbl Barrel Choke Full
+    {
+        Base.Money=2,
+        Result: Choke_Full_Dbl,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 2 Dollars for a Muzzle Brake
+    {
+        Base.Money=2,
+        Result: MuzzleBrake,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 2 Dollars for a Shotgun Choke Full
+    {
+        Base.Money=2,
+        Result: Choke_Full,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 2 Dollars for a 2 Point Sling
+    {
+        Base.Money=2,
+        Result: Sling_2,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 2 Dollars for a Mlok Angled Grip
+    {
+        Base.Money=2,
+        Result: Grip_MLOK,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 2 Dollars for a TangoDown Vert Grip
+    {
+        Base.Money=2,
+        Result: Grip_TG,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 2 Dollars for a Small Weapon Mounted Light
+    {
+        Base.Money=2,
+        Result: Light_Small,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 2 Dollars for a Large Weapon Mounted Light
+    {
+        Base.Money=2,
+        Result: Light_Large,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 2 Dollars for a M4 Bayonet
+    {
+        Base.Money=2,
+        Result: Bayonet_M4,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 2 Dollars for a AK Bayonet
+    {
+        Base.Money=2,
+        Result: Bayonet_AK,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 2 Dollars for a M1917 Bayonet
+    {
+        Base.Money=2,
+        Result: Bayonet_M1917,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 2 Dollars for a Compensator
+    {
+        Base.Money=2,
+        Result: Compensator,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 2 Dollars for a Ghost Ring Sights
+    {
+        Base.Money=2,
+        Result: GhostRing,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 2 Dollars for a 3 Point Sling
+    {
+        Base.Money=2,
+        Result: Sling_3,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 2 Dollars for a Trijicon RMR-2
+    {
+        Base.Money=2,
+        Result: Sight_MicroDot,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 2 Dollars for a C-More Red Dot Sight
+    {
+        Base.Money=2,
+        Result: Sight_RaceDot,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 3 Dollars for a Pistol Suppressor
+    {
+        Base.Money=3,
+        Result: Suppressor_Pistol,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 3 Dollars for a Rifle Suppressor
+    {
+        Base.Money=3,
+        Result: Suppressor_Rifle,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 3 Dollars for a Shotgun Suppressor
+    {
+        Base.Money=3,
+        Result: Suppressor_Shotgun,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 3 Dollars for a .50cal Suppressor
+    {
+        Base.Money=3,
+        Result: Suppressor_BMG,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 3 Dollars for a DBAL-A2 Laser Device
+    {
+        Base.Money=3,
+        Result: Laser_DVAL,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 3 Dollars for a PEQ-15
+    {
+        Base.Money=3,
+        Result: Laser_PEQ15,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 3 Dollars for a Trijicon SRS
+    {
+        Base.Money=3,
+        Result: Sight_SRS,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+    recipe Trade 3 Dollars for a Trijicon MRO
+    {
+        Base.Money=3,
+        Result: Sight_MRO,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 3 Dollars for a Trijicon SRO
+    {
+        Base.Money=3,
+        Result: Sight_SRO,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 3 Dollars for a EOTech 553
+    {
+        Base.Money=3,
+        Result: Sight_EOTech,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 4 Dollars for a EOTech XPS-2
+    {
+        Base.Money=4,
+        Result: Sight_XPS,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 4 Dollars for a Aimpoint Pro
+    {
+        Base.Money=4,
+        Result: Sight_Aimpoint,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 4 Dollars for a Aimpoint Micro T-2
+    {
+        Base.Money=4,
+        Result: Sight_Aimpoint_Dot,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 4 Dollars for a Kobra RDS
+    {
+        Base.Money=4,
+        Result: Sight_KOBRA,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 4 Dollars for a EOTech With 3x Magnifier
+    {
+        Base.Money=4,
+        Result: Sight_3xEOTech,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 4 Dollars for a Mosin PU Scope
+    {
+        Base.Money=4,
+        Result: Sight_PU,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 5 Dollars for a Aimpoint ACRO
+    {
+        Base.Money=5,
+        Result: Sight_ACRO,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 5 Dollars for a Elcan C79
+    {
+        Base.Money=5,
+        Result: Sight_C79,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 5 Dollars for a Trijicon ACOG 4x
+    {
+        Base.Money=5,
+        Result: Sight_4xACOG,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 5 Dollars for a Brownells Retro Carry Handle Scope
+    {
+        Base.Money=5,
+        Result: Sight_Brownells,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 6 Dollars for a Leupold M8 4x28
+    {
+        Base.Money=6,
+        Result: Sight_M8,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+    recipe Trade 6 Dollars for a Nikon m5 5-20x
+    {
+        Base.Money=6,
+        Result: Scope_20x,
+        Time: 5.0,
+        keep WalkieTalkie4/WalkieTalkie5/HamRadio1/HamRadio2/HamRadioMakeShift,
+        Category: Trading,
+    }
+
+}
